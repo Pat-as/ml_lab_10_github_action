@@ -54,7 +54,7 @@ def split_X_y(df: pd.DataFrame, target_col: str):
 
 
 def preprocess_data(test_size=0.25, random_state=42, csv_path: str = None):
-    mlflow.set_experiment("Email Spam - Data Preprocessing")
+    mlflow.set_experiment("Email Spam - Data Preprocessing CI")
 
     with mlflow.start_run() as run:
         run_id = run.info.run_id

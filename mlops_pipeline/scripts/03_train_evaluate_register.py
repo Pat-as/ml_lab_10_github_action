@@ -12,7 +12,7 @@ ACCURACY_THRESHOLD = 0.90
 
 
 def train_evaluate_register(preprocessing_run_id: str, C: float = 1.0):
-    mlflow.set_experiment("Email Spam - Model Training")
+    mlflow.set_experiment("Email Spam - Train/Evaluate/Register CI")
 
     with mlflow.start_run(run_name=f"logreg_C_{C}"):
         print(f"Starting training (C={C})...")
