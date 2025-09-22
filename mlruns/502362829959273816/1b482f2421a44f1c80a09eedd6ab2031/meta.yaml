@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/computer/Downloads/lab_10_284-3/mlruns/502362829959273816/1b482f2421a44f1c80a09eedd6ab2031/artifacts
+end_time: 1758514387429
+entry_point_name: ''
+experiment_id: '502362829959273816'
+lifecycle_stage: active
+run_id: 1b482f2421a44f1c80a09eedd6ab2031
+run_name: classy-loon-362
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758514384237
+status: 3
+tags: []
+user_id: computer
