@@ -97,6 +97,9 @@ def preprocess_data(test_size=0.25, random_state=42, csv_path: str = None):
         print("Saved processed_data/ (train.csv, test.csv, features.csv) and logged as artifacts.")
         print(f"Preprocessing Run ID: {run_id}")
         print("-" * 60)
+        
+        # Output run ID for GitHub Actions to capture
+        print(f"RUN_ID:{run_id}")
 
 
 if __name__ == "__main__":

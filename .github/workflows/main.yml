@@ -62,7 +62,9 @@ jobs:
       id: preprocessing
       run: |
         set -o pipefail
-        run_id=$(python mlops_pipeline/scripts/02_data_preprocessing.py | tee /dev/tty | grep -oE '[a-f0-9]{32}')
+        output=$(python mlops_pipeline/scripts/02_data_preprocessing.py)
+        echo "$output"
+        run_id=$(echo "$output" | grep "RUN_ID:" | cut -d: -f2)
         echo "run_id=$run_id" >> $GITHUB_OUTPUT
 
     - name: Run Model Training, Evaluation, and Registration
